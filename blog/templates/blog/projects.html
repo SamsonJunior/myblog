@@ -1,0 +1,57 @@
+{% extends 'blog/base.html' %} {% load static %} {% block content %}
+<div class="container mt-4">
+  <h1 class="mb-4">My Projects</h1>
+  <div class="row">
+    <!-- Project 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          src="https://picsum.photos/300/200?random=1"
+          class="card-img-top"
+          alt="Portfolio Website"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Portfolio Website</h5>
+          <p class="card-text">
+            A personal portfolio website built with HTML, CSS, and Django.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          src="https://picsum.photos/300/200?random=2"
+          class="card-img-top"
+          alt="Django Blog Application"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Django Blog Application</h5>
+          <p class="card-text">
+            A blog app to write, publish, and manage posts using Django.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img
+          src="https://picsum.photos/300/200?random=3"
+          class="card-img-top"
+          alt="Contact Form Page"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Contact Form Page</h5>
+          <p class="card-text">
+            A simple contact form to send messages and feedback.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

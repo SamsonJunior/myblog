@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %} {% block content %}
+<h1>Welcome to My blog</h1>
+<p>Latest posts:</p>
+
+{% for post in posts %}
+<div class="post-card">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.content|truncatewords:30 }}</p>
+  <small>Posted on {{ post.date_posted|date:"F j, Y" }}</small>
+</div>
+{% empty %}
+<p>No posts yet. Add some in the admin panel!</p>
+{% endfor %} {% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %} {% load static %} {% block content %}
+
+<div class="about-container">
+  <h1>About Me</h1>
+  <p>
+    Hello! My name is <strong>Julius Samson Yaji</strong>. I am passionate about
+    web development and sharing knowledge through my blog.
+  </p>
+
+  <div class="profile-container">
+    <img
+      src="{% static 'blog/sam.jpg' %}"
+      alt="Profile Picture"
+      class="profile-pic"
+    />
+  </div>
+
+  <!-- Contact Me Button -->
+  <a href="{% url 'contact' %}" class="contact-btn">Contact Me</a>
+</div>
+
+{% endblock %}
